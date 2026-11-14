@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="DataPro Solutions helps businesses turn raw data into clear reports and better decisions with Excel, SQL, Python, Power BI and Tableau.">
+<title>DataPro Solutions | Data Analytics & Reporting</title>
+<style>
+:root{--navy:#10213d;--blue:#2563eb;--cyan:#22c5d6;--ink:#17243a;--muted:#64748b;--bg:#f6f9ff;--white:#fff}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Inter,Arial,sans-serif;color:var(--ink);background:var(--white);line-height:1.6}
+a{color:inherit;text-decoration:none}.wrap{width:min(1120px,92%);margin:auto}
+header{position:sticky;top:0;background:#ffffffed;backdrop-filter:blur(12px);border-bottom:1px solid #e8eef8;z-index:10}
+nav{height:72px;display:flex;align-items:center;justify-content:space-between;gap:20px}.brand{font-weight:850;font-size:1.18rem;color:var(--navy);letter-spacing:-.5px}.brand span{color:var(--blue)}
+.links{display:flex;gap:24px;align-items:center;font-size:.93rem;color:#42516a}.btn{display:inline-flex;justify-content:center;align-items:center;background:var(--blue);color:white;padding:12px 19px;border-radius:10px;font-weight:700;border:0;cursor:pointer}.btn:hover{background:#174bc2}.btn.light{background:white;color:var(--blue);border:1px solid #d8e4ff}
+.hero{background:radial-gradient(circle at 85% 20%,#244d8c 0,transparent 30%),linear-gradient(120deg,#0c1b33,#142e55);color:white;padding:88px 0 82px;overflow:hidden}
+.hero-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:50px;align-items:center}.eyebrow{color:#8ee8f1;font-size:.8rem;font-weight:800;letter-spacing:1.8px;text-transform:uppercase}
+h1{font-size:clamp(2.5rem,5vw,4.5rem);line-height:1.08;letter-spacing:-2px;margin:15px 0 20px}.hero p{color:#d7e2f3;font-size:1.12rem;max-width:620px}.hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}.hero .light{border-color:#7892b8}
+.visual{background:#ffffff12;border:1px solid #ffffff30;border-radius:22px;padding:22px;box-shadow:0 24px 70px #0003}.visual-top{display:flex;justify-content:space-between;color:#dbeafe;font-size:.85rem}.bars{display:flex;align-items:end;gap:12px;height:170px;padding:20px 12px 0;border-bottom:1px solid #ffffff40}.bar{flex:1;border-radius:7px 7px 0 0;background:linear-gradient(#4ee1e8,#3977ed)}.metrics{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:18px}.metric{background:#ffffff12;border-radius:10px;padding:12px}.metric b{display:block;font-size:1.15rem}.metric small{color:#cbd8ed}
+section{padding:76px 0}.section-head{text-align:center;max-width:700px;margin:0 auto 38px}.kicker{color:var(--blue);font-size:.78rem;font-weight:800;letter-spacing:1.5px;text-transform:uppercase}.section-head h2{font-size:clamp(1.9rem,3vw,2.7rem);line-height:1.2;margin:10px 0}.section-head p{color:var(--muted);margin:0}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.card{border:1px solid #e4ebf5;border-radius:16px;padding:24px;background:white;box-shadow:0 8px 28px #172b4d08}.ico{width:44px;height:44px;display:grid;place-items:center;border-radius:12px;background:#eaf1ff;color:var(--blue);font-weight:900;font-size:1.05rem}.card h3{margin:14px 0 6px}.card p{color:var(--muted);font-size:.94rem;margin:0}.soft{background:var(--bg)}
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.step{padding:22px;border-radius:14px;background:white;border:1px solid #e6edf7}.num{font-weight:900;color:var(--blue);font-size:1.4rem}
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:42px;align-items:center}.about-grid h2{font-size:2.3rem;line-height:1.2}.about-grid p{color:var(--muted)}.check{padding:0;list-style:none}.check li{margin:10px 0}.check li:before{content:"✓";color:#0b9c76;font-weight:900;margin-right:10px}
+.cta{background:linear-gradient(120deg,#1553c7,#0d2d62);color:white;border-radius:22px;padding:42px;display:flex;justify-content:space-between;align-items:center;gap:24px}.cta p{color:#dbeafe;margin-bottom:0}.cta h2{margin:0;font-size:2rem}
+form{display:grid;gap:13px}.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:13px}input,select,textarea{width:100%;padding:13px 14px;border:1px solid #d8e1ef;border-radius:10px;font:inherit;background:white;color:var(--ink)}textarea{min-height:125px;resize:vertical}.contact-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:30px;align-items:start}.contact-info{background:#10213d;color:white;padding:28px;border-radius:16px}.contact-info p{color:#c9d6e9}.contact-info a{color:#9cebf0;overflow-wrap:anywhere}
+footer{background:#0b1830;color:#c5d2e6;padding:30px 0;font-size:.9rem}.foot{display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap}
+.note{font-size:.82rem;color:var(--muted);margin-top:12px}
+@media(max-width:800px){.hero-grid,.about-grid,.contact-grid{grid-template-columns:1fr}.cards,.steps{grid-template-columns:1fr 1fr}.links{display:none}.hero{padding:65px 0}.visual{max-width:520px}}
+@media(max-width:520px){.cards,.steps,.form-grid{grid-template-columns:1fr}.cta{display:block;padding:28px}.cta .btn{margin-top:18px}.hero h1{letter-spacing:-1px}}
+</style>
+</head>
+<body>
+<header><div class="wrap"><nav>
+<a class="brand" href="#home">DataPro <span>Solutions</span></a>
+<div class="links"><a href="#services">Services</a><a href="#process">How it works</a><a href="#about">About</a><a href="#contact">Contact</a></div>
+<a class="btn" href="#contact">Get a free consultation</a>
+</nav></div></header>
+<main>
+<section class="hero" id="home"><div class="wrap hero-grid">
+<div><div class="eyebrow">Data analytics • Reporting • Automation</div>
+<h1>Make your data work for your business.</h1>
+<p>We help businesses organize messy data, automate reporting and understand performance with practical, easy-to-use analytics solutions.</p>
+<div class="hero-actions"><a class="btn" href="#contact">Discuss your project</a><a class="btn light" href="#services">Explore services</a></div>
+<p style="font-size:.86rem;margin-top:18px">Excel · SQL · Python · Power BI · Tableau</p></div>
+<div class="visual" aria-label="Illustrative analytics dashboard"><div class="visual-top"><b>Business performance</b><span>Sample dashboard</span></div>
+<div class="bars"><div class="bar" style="height:42%"></div><div class="bar" style="height:60%"></div><div class="bar" style="height:48%"></div><div class="bar" style="height:76%"></div><div class="bar" style="height:68%"></div><div class="bar" style="height:94%"></div><div class="bar" style="height:82%"></div></div>
+<div class="metrics"><div class="metric"><b>Excel</b><small>Reports</small></div><div class="metric"><b>SQL</b><small>Data queries</small></div><div class="metric"><b>Power BI</b><small>Dashboards</small></div></div></div>
+</div></section>
+<section id="services"><div class="wrap"><div class="section-head"><div class="kicker">What we do</div><h2>Practical services for better decisions</h2><p>Choose a one-time task or discuss a recurring reporting requirement. Every project is scoped before work begins.</p></div>
+<div class="cards">
+<div class="card"><div class="ico">XLS</div><h3>Excel & MIS Reporting</h3><p>Data cleaning, formulas, pivot tables, monthly MIS reports and structured business summaries.</p></div>
+<div class="card"><div class="ico">SQL</div><h3>SQL & Database Reports</h3><p>Data extraction, joins, filtering, aggregations and query-based reporting from authorized datasets.</p></div>
+<div class="card"><div class="ico">Py</div><h3>Python Data Analysis</h3><p>Data cleaning and analysis using Pandas and NumPy, charts and repeatable reporting workflows.</p></div>
+<div class="card"><div class="ico">BI</div><h3>Power BI Dashboards</h3><p>Interactive dashboards, KPI cards, slicers and clear visual summaries of business performance.</p></div>
+<div class="card"><div class="ico">T</div><h3>Tableau Dashboards</h3><p>Visual analysis and dashboard layouts that help teams explore trends and comparisons.</p></div>
+<div class="card"><div class="ico">↗</div><h3>Data Entry & Conversion</h3><p>Accurate spreadsheet updates, PDF-to-Excel conversion and formatting of business records.</p></div>
+</div></div></section>
+<section class="soft" id="process"><div class="wrap"><div class="section-head"><div class="kicker">Simple process</div><h2>From raw data to useful insight</h2><p>A clear process keeps your project focused, secure and easy to review.</p></div>
+<div class="steps"><div class="step"><div class="num">01</div><h3>Tell us what you need</h3><p>Share the task, desired outcome, deadline and a sample with sensitive details removed.</p></div><div class="step"><div class="num">02</div><h3>Confirm scope & quote</h3><p>We review the requirements and agree on deliverables, price and timeline before starting.</p></div><div class="step"><div class="num">03</div><h3>Review your delivery</h3><p>Receive the completed files or dashboard and review the agreed deliverables.</p></div></div></div></section>
+<section id="about"><div class="wrap about-grid"><div><div class="kicker">About DataPro Solutions</div><h2>Clear reporting. Useful insights. Less manual work.</h2><p>DataPro Solutions is an independent data services business focused on helping small businesses and teams make better use of their data.</p><p>We aim to deliver understandable reports, organized datasets and practical dashboards—not complicated jargon.</p><a class="btn" href="#contact">Start a conversation</a></div><div class="card"><h3>Our working principles</h3><ul class="check"><li>Clear scope and transparent pricing</li><li>Careful handling of client-provided data</li><li>Practical, easy-to-understand deliverables</li><li>Updates at agreed project milestones</li><li>No inflated claims or guaranteed business results</li></ul></div></div></section>
+<section class="soft" id="pricing"><div class="wrap"><div class="section-head"><div class="kicker">Pricing</div><h2>Start with a small, clearly scoped task</h2><p>Indicative starting prices in INR. Final quotes depend on data size, complexity and deadline.</p></div>
+<div class="cards">
+<div class="card"><h3>Starter task</h3><h2>From ₹299</h2><p>Small data entry, formatting or simple spreadsheet updates.</p></div>
+<div class="card"><h3>Data cleanup</h3><h2>From ₹499</h2><p>Basic Excel cleaning, duplicate checks and formatting for a defined dataset.</p></div>
+<div class="card"><h3>Analytics project</h3><h2>From ₹799</h2><p>Basic Python or SQL analysis, or a simple report. Dashboard projects quoted separately.</p></div>
+</div><p class="note" style="text-align:center">These are sample introductory prices, not a fixed quote. Please request a project estimate before placing an order.</p></div></section>
+<section id="contact"><div class="wrap"><div class="section-head"><div class="kicker">Let's talk</div><h2>Tell us about your project</h2><p>Send a project enquiry. Replace the contact placeholders below with your real business details before publishing.</p></div>
+<div class="contact-grid"><div class="contact-info"><h3>DataPro Solutions</h3><p>Have a spreadsheet, reporting task or analytics requirement? Share a few details and we can discuss the next step.</p><p><b>Email</b><br><a href="mailto:mohammadali98765prinshi@gmail.com">mohammadali98765prinshi@gmail.com</a></p><p><b>WhatsApp</b><br><a href="https://wa.me/919554581701">+91 95545 81701</a></p><p><b>Based in</b><br>Pune, India · Serving clients online</p></div>
+<div class="card"><form id="enquiry"><div class="form-grid"><input name="name" placeholder="Your name" required><input name="email" type="email" placeholder="Your email" required></div><div class="form-grid"><input name="business" placeholder="Business / company (optional)"><select name="service" required><option value="">Select a service</option><option>Excel & MIS Reporting</option><option>SQL & Database Reports</option><option>Python Data Analysis</option><option>Power BI Dashboard</option><option>Tableau Dashboard</option><option>Data Entry & Conversion</option><option>Other</option></select></div><textarea name="message" placeholder="Briefly describe your project, data size and deadline..." required></textarea><button class="btn" type="submit">Prepare email enquiry</button><p class="note">This button opens your email app with the enquiry filled in. It does not send automatically. Add your real email address in the website code first.</p></form></div></div></div></section>
+</main>
+<footer><div class="wrap foot"><div><b>DataPro Solutions</b><br><span>Smart Data. Better Decisions.</span></div><div>© <span id="year"></span> DataPro Solutions. All rights reserved.</div></div></footer>
+<script>
+document.getElementById('year').textContent=new Date().getFullYear();
+document.getElementById('enquiry').addEventListener('submit',function(e){
+ e.preventDefault();const d=new FormData(this);
+ const subject=encodeURIComponent('Project enquiry - '+d.get('service'));
+ const body=encodeURIComponent('Name: '+d.get('name')+'\\nEmail: '+d.get('email')+'\\nBusiness: '+d.get('business')+'\\nService: '+d.get('service')+'\\nProject details: '+d.get('message'));
+ window.location.href='mailto:mohammadali98765prinshi@gmail.com?subject='+subject+'&body='+body;
+});
+</script>
+</body></html>
